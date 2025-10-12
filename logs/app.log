@@ -1,0 +1,133 @@
+2025-10-11 11:46:56 | INFO     | src.utils.logger:<module>:36 - Logger configured. All outputs will be logged.
+2025-10-11 11:46:57 | INFO     | __main__:run_pipeline:17 - ========== STARTING: STEP 1 - DATA PIPELINE ==========
+2025-10-11 11:46:57 | INFO     | __main__:run_pipeline:21 - --- Running Data Collector ---
+2025-10-11 11:46:57 | INFO     | src.data_pipeline.collector:setup_directories:13 - Setting up project directories...
+2025-10-11 11:46:57 | INFO     | src.data_pipeline.collector:setup_directories:18 - Directory check complete. Raw data will be saved in 'D:\flood-prediction-project\data\raw_api'.
+2025-10-11 11:46:57 | INFO     | src.data_pipeline.collector:collect_static_terrain_data:29 - --- Collecting Static Terrain Data (One-Time Operation) ---
+2025-10-11 11:47:00 | INFO     | src.data_pipeline.collector:collect_static_terrain_data:47 - Fetched terrain for (24.86, 67.01)
+2025-10-11 11:47:03 | INFO     | src.data_pipeline.collector:collect_static_terrain_data:47 - Fetched terrain for (31.52, 74.35)
+2025-10-11 11:47:06 | INFO     | src.data_pipeline.collector:collect_static_terrain_data:47 - Fetched terrain for (33.68, 73.04)
+2025-10-11 11:47:09 | INFO     | src.data_pipeline.collector:collect_static_terrain_data:47 - Fetched terrain for (30.17, 66.99)
+2025-10-11 11:47:12 | INFO     | src.data_pipeline.collector:collect_static_terrain_data:47 - Fetched terrain for (34.01, 71.52)
+2025-10-11 11:47:15 | INFO     | src.data_pipeline.collector:collect_static_terrain_data:47 - Fetched terrain for (25.39, 68.35)
+2025-10-11 11:47:18 | INFO     | src.data_pipeline.collector:collect_static_terrain_data:47 - Fetched terrain for (30.15, 71.48)
+2025-10-11 11:47:18 | SUCCESS  | src.data_pipeline.collector:collect_static_terrain_data:55 - Terrain data saved to 'D:\flood-prediction-project\data\raw_api\static_terrain_data.csv'.
+2025-10-11 11:47:18 | INFO     | src.data_pipeline.collector:intelligent_hydro_weather_collector:62 - --- Starting Intelligent Hydro-Weather Data Collector ---
+2025-10-11 11:47:18 | INFO     | src.data_pipeline.collector:intelligent_hydro_weather_collector:85 - No local data file found. Performing full download from 2010 to present.
+2025-10-11 11:47:18 | INFO     | src.data_pipeline.collector:intelligent_hydro_weather_collector:88 - Fetching high-altitude temperature proxy from (35.92, 74.3)...
+2025-10-11 11:47:21 | INFO     | src.data_pipeline.collector:intelligent_hydro_weather_collector:110 - Fetching data for location 1/7 (24.86, 67.01)...
+2025-10-11 11:47:22 | ERROR    | src.data_pipeline.collector:intelligent_hydro_weather_collector:125 - Skipping location (24.86, 67.01) due to error: 400 Client Error: Bad Request for url: https://archive-api.open-meteo.com/v1/archive?latitude=24.86&longitude=67.01&start_date=2010-01-01&end_date=2025-10-11&hourly=precipitation&hourly=river_discharge&timezone=auto
+2025-10-11 11:47:22 | INFO     | src.data_pipeline.collector:intelligent_hydro_weather_collector:110 - Fetching data for location 2/7 (31.52, 74.35)...
+2025-10-11 11:47:22 | ERROR    | src.data_pipeline.collector:intelligent_hydro_weather_collector:125 - Skipping location (31.52, 74.35) due to error: 400 Client Error: Bad Request for url: https://archive-api.open-meteo.com/v1/archive?latitude=31.52&longitude=74.35&start_date=2010-01-01&end_date=2025-10-11&hourly=precipitation&hourly=river_discharge&timezone=auto
+2025-10-11 11:47:22 | INFO     | src.data_pipeline.collector:intelligent_hydro_weather_collector:110 - Fetching data for location 3/7 (33.68, 73.04)...
+2025-10-11 11:47:23 | ERROR    | src.data_pipeline.collector:intelligent_hydro_weather_collector:125 - Skipping location (33.68, 73.04) due to error: 400 Client Error: Bad Request for url: https://archive-api.open-meteo.com/v1/archive?latitude=33.68&longitude=73.04&start_date=2010-01-01&end_date=2025-10-11&hourly=precipitation&hourly=river_discharge&timezone=auto
+2025-10-11 11:47:23 | INFO     | src.data_pipeline.collector:intelligent_hydro_weather_collector:110 - Fetching data for location 4/7 (30.17, 66.99)...
+2025-10-11 11:47:24 | ERROR    | src.data_pipeline.collector:intelligent_hydro_weather_collector:125 - Skipping location (30.17, 66.99) due to error: 400 Client Error: Bad Request for url: https://archive-api.open-meteo.com/v1/archive?latitude=30.17&longitude=66.99&start_date=2010-01-01&end_date=2025-10-11&hourly=precipitation&hourly=river_discharge&timezone=auto
+2025-10-11 11:47:24 | INFO     | src.data_pipeline.collector:intelligent_hydro_weather_collector:110 - Fetching data for location 5/7 (34.01, 71.52)...
+2025-10-11 11:47:24 | ERROR    | src.data_pipeline.collector:intelligent_hydro_weather_collector:125 - Skipping location (34.01, 71.52) due to error: 400 Client Error: Bad Request for url: https://archive-api.open-meteo.com/v1/archive?latitude=34.01&longitude=71.52&start_date=2010-01-01&end_date=2025-10-11&hourly=precipitation&hourly=river_discharge&timezone=auto
+2025-10-11 11:47:24 | INFO     | src.data_pipeline.collector:intelligent_hydro_weather_collector:110 - Fetching data for location 6/7 (25.39, 68.35)...
+2025-10-11 11:47:25 | ERROR    | src.data_pipeline.collector:intelligent_hydro_weather_collector:125 - Skipping location (25.39, 68.35) due to error: 400 Client Error: Bad Request for url: https://archive-api.open-meteo.com/v1/archive?latitude=25.39&longitude=68.35&start_date=2010-01-01&end_date=2025-10-11&hourly=precipitation&hourly=river_discharge&timezone=auto
+2025-10-11 11:47:25 | INFO     | src.data_pipeline.collector:intelligent_hydro_weather_collector:110 - Fetching data for location 7/7 (30.15, 71.48)...
+2025-10-11 11:47:26 | ERROR    | src.data_pipeline.collector:intelligent_hydro_weather_collector:125 - Skipping location (30.15, 71.48) due to error: 400 Client Error: Bad Request for url: https://archive-api.open-meteo.com/v1/archive?latitude=30.15&longitude=71.48&start_date=2010-01-01&end_date=2025-10-11&hourly=precipitation&hourly=river_discharge&timezone=auto
+2025-10-11 11:47:26 | WARNING  | src.data_pipeline.collector:intelligent_hydro_weather_collector:128 - No new data was fetched. Collector is stopping.
+2025-10-11 11:47:26 | SUCCESS  | __main__:run_pipeline:25 - --- Data Collector Finished ---
+2025-10-11 11:47:26 | INFO     | __main__:run_pipeline:28 - --- Running Ground Truth Creator ---
+2025-10-11 11:47:26 | INFO     | src.data_pipeline.ground_truth:create_real_ground_truth_file:14 - --- Creating Ground Truth File from Real Data ---
+2025-10-11 11:47:26 | INFO     | src.data_pipeline.ground_truth:create_real_ground_truth_file:21 - Compiling a list of major historical flood events in Pakistan...
+2025-10-11 11:47:26 | SUCCESS  | src.data_pipeline.ground_truth:create_real_ground_truth_file:45 - Real flood data saved to 'D:\flood-prediction-project\data\ground_truth\historical_floods.csv'.
+2025-10-11 11:47:26 | INFO     | src.data_pipeline.ground_truth:create_real_ground_truth_file:46 - Contains 7 major flood events for training.
+2025-10-11 11:47:26 | SUCCESS  | __main__:run_pipeline:30 - --- Ground Truth Creator Finished ---
+2025-10-11 11:47:26 | INFO     | __main__:run_pipeline:33 - --- Running Data Processor & Feature Engineer ---
+2025-10-11 11:47:26 | INFO     | src.data_pipeline.processor:process_and_feature_engineer:15 - --- Starting Data Processing & Feature Engineering ---
+2025-10-11 11:47:26 | INFO     | src.data_pipeline.processor:process_and_feature_engineer:18 - Loading raw hydro-weather data from 'D:\flood-prediction-project\data\raw_api\historical_weather_hydro_data.csv'...
+2025-10-11 11:47:26 | ERROR    | src.data_pipeline.processor:process_and_feature_engineer:27 - Cannot find data file: [Errno 2] No such file or directory: 'D:\\flood-prediction-project\\data\\raw_api\\historical_weather_hydro_data.csv'. Please run previous steps first.
+2025-10-11 11:47:26 | SUCCESS  | __main__:run_pipeline:35 - --- Data Processor Finished ---
+2025-10-11 11:47:26 | SUCCESS  | __main__:run_pipeline:37 - ========== COMPLETED: STEP 1 - DATA PIPELINE ==========
+2025-10-11 11:49:57 | INFO     | src.utils.logger:<module>:36 - Logger configured. All outputs will be logged.
+2025-10-11 11:49:59 | INFO     | __main__:run_training:15 - ========== STARTING: STEP 2 - MODEL TRAINING ==========
+2025-10-11 11:49:59 | INFO     | src.training.trainer:train_model:18 - --- Starting Model Training ---
+2025-10-11 11:49:59 | INFO     | src.training.trainer:train_model:21 - Loading processed data from 'D:\flood-prediction-project\data\processed\final_training_dataset.csv'...
+2025-10-11 11:49:59 | ERROR    | src.training.trainer:train_model:24 - Processed data not found. Please run `main_data_pipeline.py` first.
+2025-10-11 11:49:59 | SUCCESS  | __main__:run_training:18 - ========== COMPLETED: STEP 2 - MODEL TRAINING ==========
+2025-10-11 11:50:19 | INFO     | src.utils.logger:<module>:36 - Logger configured. All outputs will be logged.
+2025-10-11 11:50:19 | INFO     | __main__:run_prediction:17 - ========== STARTING: STEP 3 - PREDICTION DEMO ==========
+2025-10-11 11:50:19 | INFO     | src.prediction.predictor:load_model:12 - Loading model from 'D:\flood-prediction-project\models\flood_prediction_xgboost_model.joblib'...
+2025-10-11 11:50:19 | ERROR    | src.prediction.predictor:load_model:17 - Model file not found at 'D:\flood-prediction-project\models\flood_prediction_xgboost_model.joblib'.
+2025-10-11 11:50:19 | ERROR    | src.prediction.predictor:load_model:18 - Please run `main_train.py` first to train and save the model.
+2025-10-11 11:50:19 | SUCCESS  | __main__:run_prediction:60 - ========== COMPLETED: STEP 3 - PREDICTION DEMO ==========
+2025-10-11 11:54:23 | INFO     | src.utils.logger:<module>:36 - Logger configured. All outputs will be logged.
+2025-10-11 11:54:24 | INFO     | __main__:run_pipeline:17 - ========== STARTING: STEP 1 - DATA PIPELINE ==========
+2025-10-11 11:54:24 | INFO     | __main__:run_pipeline:21 - --- Running Data Collector ---
+2025-10-11 11:54:24 | INFO     | src.data_pipeline.collector:setup_directories:15 - Setting up project directories...
+2025-10-11 11:54:24 | INFO     | src.data_pipeline.collector:setup_directories:20 - Directory check complete. Raw data will be saved in 'D:\flood-prediction-project\data\raw_api'.
+2025-10-11 11:54:24 | INFO     | src.data_pipeline.collector:collect_static_terrain_data:29 - Terrain data already exists at 'D:\flood-prediction-project\data\raw_api\static_terrain_data.csv'. Skipping.
+2025-10-11 11:54:24 | INFO     | src.data_pipeline.collector:intelligent_hydro_weather_collector:66 - --- Starting Intelligent Hydro-Weather Data Collector ---
+2025-10-11 11:54:24 | INFO     | src.data_pipeline.collector:intelligent_hydro_weather_collector:89 - No local data file found. Performing full download from 2010 to present.
+2025-10-11 11:54:24 | INFO     | src.data_pipeline.collector:intelligent_hydro_weather_collector:92 - Fetching high-altitude temperature proxy from (35.92, 74.3)...
+2025-10-11 11:54:27 | INFO     | src.data_pipeline.collector:intelligent_hydro_weather_collector:116 - Fetching data for location 1/7 (24.86, 67.01)...
+2025-10-11 11:54:30 | INFO     | src.data_pipeline.collector:intelligent_hydro_weather_collector:116 - Fetching data for location 2/7 (31.52, 74.35)...
+2025-10-11 11:54:34 | INFO     | src.data_pipeline.collector:intelligent_hydro_weather_collector:116 - Fetching data for location 3/7 (33.68, 73.04)...
+2025-10-11 11:54:37 | INFO     | src.data_pipeline.collector:intelligent_hydro_weather_collector:116 - Fetching data for location 4/7 (30.17, 66.99)...
+2025-10-11 11:54:41 | INFO     | src.data_pipeline.collector:intelligent_hydro_weather_collector:116 - Fetching data for location 5/7 (34.01, 71.52)...
+2025-10-11 11:54:44 | INFO     | src.data_pipeline.collector:intelligent_hydro_weather_collector:116 - Fetching data for location 6/7 (25.39, 68.35)...
+2025-10-11 11:54:47 | INFO     | src.data_pipeline.collector:intelligent_hydro_weather_collector:116 - Fetching data for location 7/7 (30.15, 71.48)...
+2025-10-11 11:54:51 | INFO     | src.data_pipeline.collector:intelligent_hydro_weather_collector:143 - Processing and saving new data...
+2025-10-11 11:54:55 | SUCCESS  | src.data_pipeline.collector:intelligent_hydro_weather_collector:158 - Successfully created new data file at 'D:\flood-prediction-project\data\raw_api\historical_weather_hydro_data.csv'.
+2025-10-11 11:54:55 | SUCCESS  | __main__:run_pipeline:25 - --- Data Collector Finished ---
+2025-10-11 11:54:55 | INFO     | __main__:run_pipeline:28 - --- Running Ground Truth Creator ---
+2025-10-11 11:54:55 | INFO     | src.data_pipeline.ground_truth:create_real_ground_truth_file:14 - --- Creating Ground Truth File from Real Data ---
+2025-10-11 11:54:55 | INFO     | src.data_pipeline.ground_truth:create_real_ground_truth_file:17 - Ground truth file already exists at 'D:\flood-prediction-project\data\ground_truth\historical_floods.csv'. Skipping creation.
+2025-10-11 11:54:55 | INFO     | src.data_pipeline.ground_truth:create_real_ground_truth_file:18 - (Delete the file if you want to regenerate it).
+2025-10-11 11:54:55 | SUCCESS  | __main__:run_pipeline:30 - --- Ground Truth Creator Finished ---
+2025-10-11 11:54:55 | INFO     | __main__:run_pipeline:33 - --- Running Data Processor & Feature Engineer ---
+2025-10-11 11:54:55 | INFO     | src.data_pipeline.processor:process_and_feature_engineer:16 - --- Starting Data Processing & Feature Engineering ---
+2025-10-11 11:54:55 | INFO     | src.data_pipeline.processor:process_and_feature_engineer:19 - Loading raw hydro-weather data from 'D:\flood-prediction-project\data\raw_api\historical_weather_hydro_data.csv'...
+2025-10-11 11:54:56 | INFO     | src.data_pipeline.processor:process_and_feature_engineer:22 - Loading static terrain data from 'D:\flood-prediction-project\data\raw_api\static_terrain_data.csv'...
+2025-10-11 11:54:56 | INFO     | src.data_pipeline.processor:process_and_feature_engineer:25 - Loading ground truth data from 'D:\flood-prediction-project\data\ground_truth\historical_floods.csv'...
+2025-10-11 11:54:56 | INFO     | src.data_pipeline.processor:process_and_feature_engineer:32 - Merging terrain data with hydro-weather data...
+2025-10-11 11:54:57 | INFO     | src.data_pipeline.processor:process_and_feature_engineer:39 - Engineering time-series features (this may take a while)...
+2025-10-11 11:54:57 | INFO     | src.data_pipeline.processor:process_and_feature_engineer:47 - Time-series features created: rolling averages, date components.
+2025-10-11 11:54:57 | INFO     | src.data_pipeline.processor:process_and_feature_engineer:49 - Creating target variable by mapping ground truth events to time-series data...
+2025-10-11 11:54:57 | INFO     | src.data_pipeline.processor:process_and_feature_engineer:78 - Labeled 2359 data points as flood precursors.
+2025-10-11 11:54:57 | INFO     | src.data_pipeline.processor:process_and_feature_engineer:87 - Saving final processed dataset to 'D:\flood-prediction-project\data\processed\final_training_dataset.csv'...
+2025-10-11 11:55:02 | SUCCESS  | src.data_pipeline.processor:process_and_feature_engineer:89 - Data processing and feature engineering complete.
+2025-10-11 11:55:02 | SUCCESS  | __main__:run_pipeline:35 - --- Data Processor Finished ---
+2025-10-11 11:55:02 | SUCCESS  | __main__:run_pipeline:37 - ========== COMPLETED: STEP 1 - DATA PIPELINE ==========
+2025-10-11 11:55:16 | INFO     | src.utils.logger:<module>:36 - Logger configured. All outputs will be logged.
+2025-10-11 11:55:17 | INFO     | __main__:run_training:15 - ========== STARTING: STEP 2 - MODEL TRAINING ==========
+2025-10-11 11:55:17 | INFO     | src.training.trainer:train_model:19 - --- Starting Model Training ---
+2025-10-11 11:55:17 | INFO     | src.training.trainer:train_model:22 - Loading processed data from 'D:\flood-prediction-project\data\processed\final_training_dataset.csv'...
+2025-10-11 11:55:18 | INFO     | src.training.trainer:train_model:39 - Class imbalance ratio (scale_pos_weight): 409.42
+2025-10-11 11:55:18 | INFO     | src.training.trainer:train_model:44 - Data split into training (726138 rows) and testing (242046 rows).
+2025-10-11 11:55:18 | INFO     | src.training.trainer:train_model:46 - Training XGBoost Classifier...
+2025-10-11 11:55:21 | SUCCESS  | src.training.trainer:train_model:58 - Model training complete.
+2025-10-11 11:55:21 | INFO     | src.training.trainer:train_model:60 - 
+--- Model Evaluation on Test Set ---
+2025-10-11 11:55:21 | INFO     | src.training.trainer:train_model:67 - Classification Report:
+              precision    recall  f1-score   support
+
+           0       1.00      0.98      0.99    241456
+           1       0.10      0.99      0.18       590
+
+    accuracy                           0.98    242046
+   macro avg       0.55      0.99      0.58    242046
+weighted avg       1.00      0.98      0.99    242046
+
+2025-10-11 11:55:21 | INFO     | src.training.trainer:train_model:68 - Confusion Matrix:
+[[235957   5499]
+ [     3    587]]
+2025-10-11 11:55:21 | INFO     | src.training.trainer:train_model:70 - Saving trained model to 'D:\flood-prediction-project\models\flood_prediction_xgboost_model.joblib'...
+2025-10-11 11:55:21 | SUCCESS  | src.training.trainer:train_model:72 - Model saved successfully.
+2025-10-11 11:55:21 | INFO     | src.training.trainer:train_model:75 - Generating feature importance plot...
+2025-10-11 11:55:22 | SUCCESS  | src.training.trainer:train_model:80 - Feature importance plot saved to 'D:\flood-prediction-project\models\feature_importance.png'
+2025-10-11 11:55:22 | SUCCESS  | src.training.trainer:train_model:82 - Model training and artifact saving complete.
+2025-10-11 11:55:22 | SUCCESS  | __main__:run_training:18 - ========== COMPLETED: STEP 2 - MODEL TRAINING ==========
+2025-10-11 11:56:06 | INFO     | src.utils.logger:<module>:36 - Logger configured. All outputs will be logged.
+2025-10-11 11:56:06 | INFO     | __main__:run_prediction:17 - ========== STARTING: STEP 3 - PREDICTION DEMO ==========
+2025-10-11 11:56:06 | INFO     | src.prediction.predictor:load_model:12 - Loading model from 'D:\flood-prediction-project\models\flood_prediction_xgboost_model.joblib'...
+2025-10-11 11:56:08 | SUCCESS  | src.prediction.predictor:load_model:14 - Model loaded successfully.
+2025-10-11 11:56:08 | INFO     | src.prediction.predictor:predict_flood_risk:42 - Making predictions on 2 data points...
+2025-10-11 11:56:08 | SUCCESS  | src.prediction.predictor:predict_flood_risk:46 - Prediction complete.
+2025-10-11 11:56:08 | INFO     | __main__:run_prediction:58 - Prediction for input 1: No Flood Risk (Probability: 0.15%)
+2025-10-11 11:56:08 | INFO     | __main__:run_prediction:58 - Prediction for input 2: No Flood Risk (Probability: 0.00%)
+2025-10-11 11:56:08 | SUCCESS  | __main__:run_prediction:60 - ========== COMPLETED: STEP 3 - PREDICTION DEMO ==========

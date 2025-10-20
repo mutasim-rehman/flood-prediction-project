@@ -37,7 +37,7 @@ Clone the repository and set up a virtual environment:
 
 ```bash
 # Clone the project
-git clone <your-repository-url>
+git clone <https://github.com/mutasim-rehman/flood-prediction-project>
 cd flood-prediction-project
 
 # Create and activate a virtual environment

@@ -27,7 +27,9 @@ The project is designed with **scalability**, **maintainability**, and **clear m
 - **🧮 Advanced Feature Engineering** – Incorporates **time-series**, **topographical**, and **hydrological** features (e.g., rainfall averages, elevation, slope, glacial melt proxies).  
 - **⚙️ Powerful ML Model** – Uses **XGBoost Classifier**, renowned for its accuracy on complex tabular datasets.  
 - **📁 Modular Structure** – Organized into a clean `src/` directory for each part of the pipeline.  
-- **🪵 Centralized Logging** – Structured logs saved to `logs/app.log` for easy debugging and reproducibility.  
+- **🪵 Centralized Logging** – Structured logs saved to `logs/app.log` for easy debugging and reproducibility.
+- ![UML Diagram](class_diagram_fda.png)
+
 
 ---
 
